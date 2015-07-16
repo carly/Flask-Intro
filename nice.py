@@ -60,7 +60,7 @@ def say_hello():
 
 @app.route('/greet', methods=['POST'])
 def greet_person():
-    player = request..get("person")
+    player = request.forms.get("person")
 
     AWESOMENESS = [
         'awesome', 'terrific', 'fantastic', 'neato', 'fantabulous', 'wowza', 'oh-so-not-meh',
